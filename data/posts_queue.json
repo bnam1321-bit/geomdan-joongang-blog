@@ -1,0 +1,651 @@
+[
+  {
+    "id": 1,
+    "scheduledAt": "2026-09-21T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"속 쓰리고 더부룩한데 약만 드셨나요?\" 위·대장 내시경 세부전문의가 짚어주는 조기 발견의 차이",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"속 쓰림·소화불량, 단순 위염일까?\"",
+    "cardBold": "위·대장 내시경 조기 진단의 차이",
+    "cardPoints": [
+      "• 대학병원급 고화질 내시경 시스템",
+      "• 발견 즉시 당일 원스톱 용종절제술",
+      "• 1:1 수면 활력징후 모니터링 안심 케어"
+    ],
+    "snippet": "속 쓰림이나 잦은 소화불량을 단순 체기로 넘기지 마세요. 소화기 질환은 초기에 뚜렷한 증상이 없는 경우가 많아 정밀 내시경 검진이 무엇보다 중요합니다.",
+    "tags": [
+      "위내시경",
+      "대장내시경",
+      "수면내시경",
+      "용종절제술",
+      "소화기내시경세부전문의",
+      "검단내과",
+      "불로동내과",
+      "속쓰림원인"
+    ]
+  },
+  {
+    "id": 2,
+    "scheduledAt": "2026-09-23T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"올해 국가건강검진, 어디서 받아야 안심일까요?\" 5대암부터 만성질환까지 꼼꼼하게 챙기는 검진 원칙",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "보건복지부 지정 국가검진",
+    "cardQuote": "\"올해 국가건강검진, 어디서 받아야 안심일까?\"",
+    "cardBold": "5대암부터 만성질환까지 꼼꼼한 검진",
+    "cardPoints": [
+      "• 위·대장·간·유방·자궁 5대암 국가검진",
+      "• 200평 규모 쾌적한 독립 종합검진센터",
+      "• 이상 소견 발견 시 원스톱 즉각 치료 연계"
+    ],
+    "snippet": "미루다 보면 연말에 몰려요! 보건복지부 지정 국가검진 기관 검단중앙내과의 5대암·공단검진 프로그램 및 안심 검진 기준 안내.",
+    "tags": [
+      "국가건강검진",
+      "공단검진",
+      "5대암검진",
+      "위암검진",
+      "대장암검진",
+      "검단건강검진",
+      "불로동건강검진",
+      "직장인건강검진"
+    ]
+  },
+  {
+    "id": 3,
+    "scheduledAt": "2026-09-25T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"평일엔 시간 없고 주말엔 문 여는 병원이 없다면?\" 검단 주민을 위한 일요일 진료 & 2인 전문의 맞춤 케어",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "☀️ 일요일 오전 정상 진료",
+    "cardQuote": "\"평일엔 시간 없고 주말엔 병원이 닫았다면?\"",
+    "cardBold": "일요일에도 아침 8시 반부터! 2인 전문의 케어",
+    "cardPoints": [
+      "• 수·토·일요일 점심시간 없이 연속 진료",
+      "• 내과 + 가정의학과 2인 전문의 밀착 협진",
+      "• 건물 내 지하주차장 무료 주차 지원"
+    ],
+    "snippet": "일요일에도 아침 8시 반부터 문을 엽니다! 내과 전문의와 가정의학과 전문의가 함께하는 검단중앙내과 2인 진료 시스템 및 주말 진료 안내.",
+    "tags": [
+      "검단일요일내과",
+      "검단주말진료",
+      "불로동내과",
+      "신검단중앙역내과",
+      "소화기내과",
+      "가정의학과",
+      "만성질환",
+      "일요일병원"
+    ]
+  },
+  {
+    "id": 4,
+    "scheduledAt": "2026-09-28T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요?\" 안전한 검사를 위한 장정결 가이드",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"검사 전날 커피 한 잔, 정말 안 될까?\"",
+    "cardBold": "대장내시경 음식 조절 & 복약 수칙",
+    "cardPoints": [
+      "• 3일 전 피해야 할 음식(씨 있는 과일, 해조류)",
+      "• 검사 전날 식사와 커피 가능 시간대",
+      "• 알약 장정결제 복용 팁과 수분 섭취"
+    ],
+    "snippet": "대장내시경의 정확도는 장이 얼마나 깨끗하게 비워졌는지에 달려 있습니다. 소화기내시경 세부전문의가 3일 전 식단부터 검사 당일까지 꼭 지켜야 할 장정결 팁을 짚어드립니다.",
+    "tags": [
+      "대장내시경전날음식",
+      "대장내시경커피",
+      "장정결제",
+      "알약장정결제",
+      "검단대장내시경",
+      "불로동내시경",
+      "소화기내과"
+    ]
+  },
+  {
+    "id": 5,
+    "scheduledAt": "2026-09-30T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"위암 검진 2년 주기, 왜 아무 증상이 없어도 꼭 받아야 할까요?\" 조기 위암 5년 생존율 90%의 진실",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "5대암 국가건강검진",
+    "cardQuote": "\"안 아픈데 위내시경을 왜 또 받나요?\"",
+    "cardBold": "조기 위암 발견과 내시경 절제술의 비밀",
+    "cardPoints": [
+      "• 초기 위암은 80% 이상 무증상으로 진행",
+      "• 2년 주기 위내시경 시 조기 발견율 90% 이상",
+      "• 개복 수술 없이 내시경만으로 치료 가능한 단계"
+    ],
+    "snippet": "조기 위암은 조기에만 발견하면 수술 없이 내시경 시술만으로도 완치가 가능합니다. 만 40세 이상 남녀라면 증상이 없어도 2년마다 국가 위암검진을 놓쳐서는 안 되는 이유를 설명합니다.",
+    "tags": [
+      "위암검진",
+      "위내시경주기",
+      "조기위암",
+      "국가암검진",
+      "검단위내시경",
+      "불로동위내시경",
+      "위암생존율"
+    ]
+  },
+  {
+    "id": 6,
+    "scheduledAt": "2026-10-02T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "vaccine",
+    "categoryName": "예방접종·수액",
+    "title": "\"올가을 독감 백신, 언제 맞는 게 가장 효과적일까요?\" 2026-2027절기 인플루엔자 & 면역 회복 수액",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-vaccine",
+    "cardBadge": "2026-2027 예방접종 클리닉",
+    "cardQuote": "\"올가을 독감 백신, 언제 맞는 게 가장 효과적일까?\"",
+    "cardBold": "인플루엔자 4가 백신 & 맞춤 영양수액",
+    "cardPoints": [
+      "• 9월 말 ~ 10월 중순 최적기 접종",
+      "• 폐렴구균·대상포진 시너지 동시접종 권장",
+      "• 1:1 맞춤 피로회복 & 면역강화 수액"
+    ],
+    "snippet": "독감은 일반 감기와 다릅니다! 2026-2027절기 독감 4가 백신 접종 적기와 폐렴구균 동시 접종, 환절기 피로회복 수액 솔루션.",
+    "tags": [
+      "독감예방접종",
+      "독감백신",
+      "폐렴구균접종",
+      "대상포진접종",
+      "피로회복수액",
+      "면역수액",
+      "검단내과",
+      "불로동수액"
+    ]
+  },
+  {
+    "id": 7,
+    "scheduledAt": "2026-10-05T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장 용종, 발견하면 왜 당일 바로 떼야 할까요?\" 선종성 용종과 대장암 예방의 진실",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "소화기내시경 세부전문의",
+    "cardQuote": "\"용종 떼러 큰 병원 다시 가야 하나요?\"",
+    "cardBold": "검단중앙내과 당일 원스톱 용종절제술",
+    "cardPoints": [
+      "• 대장암의 95%는 선종성 용종에서 시작",
+      "• 검사 현장에서 즉시 제거하는 원스톱 시술",
+      "• 시술 후 주의사항과 안전한 조직검사 연계"
+    ],
+    "snippet": "대장 용종은 대장암으로 발전하는 씨앗입니다. 검단중앙내과는 수만 건의 시술 경험을 가진 세부전문의가 검사 중 발견 즉시 당일 용종절제술을 시행하여 두 번 검사받는 불편을 없앱니다.",
+    "tags": [
+      "대장용종",
+      "용종절제술",
+      "당일용종절제",
+      "대장암예방",
+      "선종성용종",
+      "검단대장내시경",
+      "불로동용종제거"
+    ]
+  },
+  {
+    "id": 8,
+    "scheduledAt": "2026-10-07T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"건강검진 혈액검사에서 간 수치(AST/ALT)가 높다면?\" 침묵의 장기가 보내는 지방간·간염 신호",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "간질환 & 초음파 클리닉",
+    "cardQuote": "\"술도 안 마시는데 간 수치가 왜 높죠?\"",
+    "cardBold": "비알코올성 지방간과 상복부 초음파 검진",
+    "cardPoints": [
+      "• AST/ALT, 감마GTP 수치의 정확한 의미",
+      "• 비알코올성 지방간과 대사증후군 연관성",
+      "• 초음파 검사를 통한 간경화·간암 조기 감별"
+    ],
+    "snippet": "간은 70% 이상 망가져도 통증이 없는 침묵의 장기입니다. 건강검진 결과표에서 간 수치 이상을 발견했을 때 당황하지 않고 원인을 감별하는 법과 정밀 초음파 검진의 중요성을 전합니다.",
+    "tags": [
+      "간수치",
+      "ASTALT",
+      "지방간",
+      "상복부초음파",
+      "간초음파",
+      "검단건강검진",
+      "불로동간초음파",
+      "만성피로"
+    ]
+  },
+  {
+    "id": 9,
+    "scheduledAt": "2026-10-09T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"혈압약 한 번 먹기 시작하면 평생 못 끊나요?\" 고혈압의 오해와 심뇌혈관 질환 예방 원칙",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "만성질환 집중 케어",
+    "cardQuote": "\"약 먹기 무서워서 버티고 계신가요?\"",
+    "cardBold": "고혈압 약물 치료의 오해와 혈관 보호",
+    "cardPoints": [
+      "• 혈압약을 일찍 시작해야 뇌졸중·심근경색 예방",
+      "• 생활습관 개선으로 약 용량 조절 및 감량 가능",
+      "• 평일 야간 & 일요일 오전 진료로 정기 처방 관리"
+    ],
+    "snippet": "혈압약을 평생 먹을까 봐 복용을 주저하시는 분들이 많습니다. 하지만 혈압약은 중독되는 약이 아니라 혈관을 보호하는 든든한 방패입니다. 가정의학과 전문의가 올바른 혈압 관리법을 알려드립니다.",
+    "tags": [
+      "고혈압약",
+      "혈압관리",
+      "만성질환",
+      "뇌졸중예방",
+      "불로동내과",
+      "신검단중앙역내과",
+      "검단일요일내과",
+      "가정의학과"
+    ]
+  },
+  {
+    "id": 10,
+    "scheduledAt": "2026-10-12T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"수면내시경, 자고 일어났는데 왜 아무 기억이 안 날까요?\" 안전한 진정내시경 원리와 회복 가이드",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "안심 수면내시경",
+    "cardQuote": "\"수면내시경 중 헛소리할까 봐 겁나요\"",
+    "cardBold": "미다졸람·프로포폴 진정 원리와 안전 수칙",
+    "cardPoints": [
+      "• 전신마취가 아닌 의식하 진정(수면) 요법의 차이",
+      "• 1:1 맥박·산소포화도 실시간 자동 감시",
+      "• 검사 후 운전 금지 및 안전 귀가 수칙"
+    ],
+    "snippet": "수면내시경은 전신마취가 아닌 의식하 진정 요법으로, 잠든 상태에서 불안과 통증 없이 검사를 마칠 수 있는 안전한 방법입니다. 검단중앙내과의 철저한 1:1 수면 모니터링 시스템을 소개합니다.",
+    "tags": [
+      "수면내시경",
+      "수면내시경마취",
+      "진정내시경",
+      "내시경회복",
+      "검단수면내시경",
+      "불로동내과",
+      "소화기내과"
+    ]
+  },
+  {
+    "id": 11,
+    "scheduledAt": "2026-10-14T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"국가 대장암 분변잠혈검사에서 '양성'이 나왔다면?\" 당황하지 않고 대장내시경 받는 법",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "국가 대장암 검진",
+    "cardQuote": "\"대변검사에서 피가 섞여 나왔다는데 암일까요?\"",
+    "cardBold": "분변잠혈 양성 판정과 대장내시경 국가지원",
+    "cardPoints": [
+      "• 분변잠혈 양성이 암을 뜻하지는 않습니다",
+      "• 용종, 치질, 염증성 질환 등 정밀 감별 필요",
+      "• 국가 지원으로 대장내시경 무료/본인부담 절감"
+    ],
+    "snippet": "대변검사에서 잠혈 양성 통보를 받으시면 덜컥 겁부터 내시는 경우가 많습니다. 분변잠혈은 작은 용종이나 치핵에 의해서도 나타나므로, 세부전문의 대장내시경을 통해 원인을 정확히 찾는 것이 급선무입니다.",
+    "tags": [
+      "분변잠혈검사",
+      "대변검사양성",
+      "대장암검진",
+      "혈변원인",
+      "대장내시경검사",
+      "검단건강검진",
+      "불로동내과"
+    ]
+  },
+  {
+    "id": 12,
+    "scheduledAt": "2026-10-16T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "vaccine",
+    "categoryName": "예방접종·수액",
+    "title": "\"자도 자도 피곤하고 면역력이 바닥났다면?\" 만성피로 증후군과 1:1 맞춤 영양수액 솔루션",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-vaccine",
+    "cardBadge": "1:1 맞춤 영양수액",
+    "cardQuote": "\"주말 내내 쉬었는데도 월요일이 두려워요\"",
+    "cardBold": "가정의학과 전문의 처방 프리미엄 수액 케어",
+    "cardPoints": [
+      "• 고용량 비타민C + 마이어스 칵테일 피로 회복",
+      "• 간기능 개선 및 체내 활성산소 제거 글루타치온",
+      "• 안락하고 프라이빗한 독립 수액실에서 힐링"
+    ],
+    "snippet": "충분한 수면을 취해도 피로가 풀리지 않는다면 체내 비타민과 미네랄 고갈, 산화 스트레스가 원인일 수 있습니다. 가정의학과 전문의 문진을 통해 내 몸에 딱 맞는 맞춤 영양수액을 처방받아 보세요.",
+    "tags": [
+      "만성피로",
+      "영양수액",
+      "피로회복수액",
+      "면역수액",
+      "글루타치온",
+      "비타민주사",
+      "검단수액",
+      "불로동수액"
+    ]
+  },
+  {
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"대장내시경 검사 전날, 커피와 음식 언제...\"",
+    "cardBold": "3일 전 식단 조절과 알약 장정결제 복용법",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 노인영 대표원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">3일 전 식단 조절과 알약 장정결제 복용법</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 13,
+    "scheduledAt": "2026-10-19T08:30:00+09:00",
+    "dayOfWeek": "월요일"
+  },
+  {
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진\"",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "5대암·국가건강검진",
+    "cardQuote": "\"연말 건강검진 대란 전 10월에 꼭 받아...\"",
+    "cardBold": "연말 몰림 피하는 가을 검진 골든타임",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 노인영 대표원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">연말 몰림 피하는 가을 검진 골든타임</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 14,
+    "scheduledAt": "2026-10-21T08:30:00+09:00",
+    "dayOfWeek": "수요일"
+  },
+  {
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "일요일진료·병원소식",
+    "cardQuote": "\"대장내시경 검사 전날, 커피와 음식 언제...\"",
+    "cardBold": "3일 전 식단 조절과 알약 장정결제 복용법",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 김인선 원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">3일 전 식단 조절과 알약 장정결제 복용법</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 15,
+    "scheduledAt": "2026-10-23T08:30:00+09:00",
+    "dayOfWeek": "금요일"
+  },
+  {
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"대장내시경 검사 전날, 커피와 음식 언제...\"",
+    "cardBold": "3일 전 식단 조절과 알약 장정결제 복용법",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 노인영 대표원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">3일 전 식단 조절과 알약 장정결제 복용법</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 16,
+    "scheduledAt": "2026-10-26T08:30:00+09:00",
+    "dayOfWeek": "월요일"
+  },
+  {
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진\"",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "5대암·국가건강검진",
+    "cardQuote": "\"연말 건강검진 대란 전 10월에 꼭 받아...\"",
+    "cardBold": "연말 몰림 피하는 가을 검진 골든타임",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 노인영 대표원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">연말 몰림 피하는 가을 검진 골든타임</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 17,
+    "scheduledAt": "2026-10-28T08:30:00+09:00",
+    "dayOfWeek": "수요일"
+  },
+  {
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "일요일진료·병원소식",
+    "cardQuote": "\"대장내시경 검사 전날, 커피와 음식 언제...\"",
+    "cardBold": "3일 전 식단 조절과 알약 장정결제 복용법",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 김인선 원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">3일 전 식단 조절과 알약 장정결제 복용법</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 18,
+    "scheduledAt": "2026-10-30T08:30:00+09:00",
+    "dayOfWeek": "금요일"
+  },
+  {
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"대장내시경 검사 전날, 커피와 음식 언제...\"",
+    "cardBold": "3일 전 식단 조절과 알약 장정결제 복용법",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 노인영 대표원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">3일 전 식단 조절과 알약 장정결제 복용법</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 19,
+    "scheduledAt": "2026-11-02T08:30:00+09:00",
+    "dayOfWeek": "월요일"
+  },
+  {
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진\"",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "5대암·국가건강검진",
+    "cardQuote": "\"연말 건강검진 대란 전 10월에 꼭 받아...\"",
+    "cardBold": "연말 몰림 피하는 가을 검진 골든타임",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 노인영 대표원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"연말 건강검진 대란 전 10월에 꼭 받아야 하는 국가 5대암 검진\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">연말 몰림 피하는 가을 검진 골든타임</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 20,
+    "scheduledAt": "2026-11-04T08:30:00+09:00",
+    "dayOfWeek": "수요일"
+  },
+  {
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "일요일진료·병원소식",
+    "cardQuote": "\"대장내시경 검사 전날, 커피와 음식 언제...\"",
+    "cardBold": "3일 전 식단 조절과 알약 장정결제 복용법",
+    "cardPoints": [
+      "• 소화기내시경 및 가정의학과 2인 전문의 협진",
+      "• 대학병원급 장비 기반의 정밀 진단 시스템",
+      "• 일요일 오전 08:30~13:00 안심 주말 진료"
+    ],
+    "snippet": "대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙에 대해 검단중앙내과의원 전문 의료진이 알기 쉽게 전해드립니다. 초기 정확한 진단과 올바른 예방 관리가 건강을 지키는 지름길입니다.",
+    "tags": [
+      "검단내과",
+      "불로동내과",
+      "검단중앙내과",
+      "건강검진",
+      "일요일진료"
+    ],
+    "contentHtml": "\n          <div class=\"reader-body reader-center\">\n            <p class=\"reader-p\">안녕하십니까. 올바른 의학 정보로 지역 주민의 건강을 살피는 검단중앙내과의원 김인선 원장입니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-quote-dialog\">\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요? 장정결 수칙\"</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">환자분들께서 진료실에서 자주 문의주시는 증상과 질환에 대해 핵심 내용을 짚어드립니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🩺 1. 조기 진단과 정확한 감별이 중요한 이유</div>\n            <div class=\"reader-callout\">\n              <div class=\"callout-lead\">3일 전 식단 조절과 알약 장정결제 복용법</div>\n              <div class=\"callout-desc\">증상이 경미하더라도 원인을 명확히 진단받고 조기에 치료를 시작하는 것이 합병증을 막는 가장 좋은 방법입니다.</div>\n            </div>\n            <p class=\"reader-p\">검단 불로동 검단중앙내과의원은 대학병원급 정밀 검진 장비와 풍부한 임상 경험을 갖춘 2인 전문의가 정직하고 세심하게 진료합니다.</p>\n            <hr class=\"reader-hr\">\n            <div class=\"reader-subheading\">🏥 2. 바쁜 주민을 위한 일요일 진료 안내</div>\n            <p class=\"reader-p\">평일 진료가 어려우신 분들을 위해 <strong>일요일에도 오전 08:30부터 13:00까지 점심시간 없이 정상 진료</strong>합니다. 건물 지하 무료 주차가 지원되므로 편안하게 내원하시기 바랍니다.</p>\n            <div class=\"reader-blank\"></div>\n            <p class=\"reader-p\">감사합니다.</p>\n          </div>\n        ",
+    "id": 21,
+    "scheduledAt": "2026-11-06T08:30:00+09:00",
+    "dayOfWeek": "금요일"
+  }
+]

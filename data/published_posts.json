@@ -1,0 +1,104 @@
+[
+  {
+    "id": 3,
+    "scheduledAt": "2026-09-25T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"평일엔 시간 없고 주말엔 문 여는 병원이 없다면?\" 검단 주민을 위한 일요일 진료 & 2인 전문의 맞춤 케어",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "☀️ 일요일 오전 정상 진료",
+    "cardQuote": "\"평일엔 시간 없고 주말엔 병원이 닫았다면?\"",
+    "cardBold": "일요일에도 아침 8시 반부터! 2인 전문의 케어",
+    "cardPoints": [
+      "• 수·토·일요일 점심시간 없이 연속 진료",
+      "• 내과 + 가정의학과 2인 전문의 밀착 협진",
+      "• 건물 내 지하주차장 무료 주차 지원"
+    ],
+    "snippet": "일요일에도 아침 8시 반부터 문을 엽니다! 내과 전문의와 가정의학과 전문의가 함께하는 검단중앙내과 2인 진료 시스템 및 주말 진료 안내.",
+    "tags": [
+      "검단일요일내과",
+      "검단주말진료",
+      "불로동내과",
+      "신검단중앙역내과",
+      "소화기내과",
+      "가정의학과",
+      "만성질환",
+      "일요일병원"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 09. 25."
+  },
+  {
+    "id": 2,
+    "scheduledAt": "2026-09-23T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"올해 국가건강검진, 어디서 받아야 안심일까요?\" 5대암부터 만성질환까지 꼼꼼하게 챙기는 검진 원칙",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "보건복지부 지정 국가검진",
+    "cardQuote": "\"올해 국가건강검진, 어디서 받아야 안심일까?\"",
+    "cardBold": "5대암부터 만성질환까지 꼼꼼한 검진",
+    "cardPoints": [
+      "• 위·대장·간·유방·자궁 5대암 국가검진",
+      "• 200평 규모 쾌적한 독립 종합검진센터",
+      "• 이상 소견 발견 시 원스톱 즉각 치료 연계"
+    ],
+    "snippet": "미루다 보면 연말에 몰려요! 보건복지부 지정 국가검진 기관 검단중앙내과의 5대암·공단검진 프로그램 및 안심 검진 기준 안내.",
+    "tags": [
+      "국가건강검진",
+      "공단검진",
+      "5대암검진",
+      "위암검진",
+      "대장암검진",
+      "검단건강검진",
+      "불로동건강검진",
+      "직장인건강검진"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 09. 23."
+  },
+  {
+    "id": 1,
+    "scheduledAt": "2026-09-21T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"속 쓰리고 더부룩한데 약만 드셨나요?\" 위·대장 내시경 세부전문의가 짚어주는 조기 발견의 차이",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"속 쓰림·소화불량, 단순 위염일까?\"",
+    "cardBold": "위·대장 내시경 조기 진단의 차이",
+    "cardPoints": [
+      "• 대학병원급 고화질 내시경 시스템",
+      "• 발견 즉시 당일 원스톱 용종절제술",
+      "• 1:1 수면 활력징후 모니터링 안심 케어"
+    ],
+    "snippet": "속 쓰림이나 잦은 소화불량을 단순 체기로 넘기지 마세요. 소화기 질환은 초기에 뚜렷한 증상이 없는 경우가 많아 정밀 내시경 검진이 무엇보다 중요합니다.",
+    "tags": [
+      "위내시경",
+      "대장내시경",
+      "수면내시경",
+      "용종절제술",
+      "소화기내시경세부전문의",
+      "검단내과",
+      "불로동내과",
+      "속쓰림원인"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 09. 21."
+  }
+]

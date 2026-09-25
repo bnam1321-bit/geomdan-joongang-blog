@@ -1,0 +1,46 @@
+name: Auto Publish Medical Column & Sync GEO Knowledge Base
+
+on:
+  schedule:
+    # 매주 월, 수, 금 한국 시간 08:30 정각 실행 (UTC 기준 23:30 일, 화, 목)
+    - cron: '30 23 * * 0,2,4'
+  workflow_dispatch: # GitHub 웹 콘솔에서 수동 즉시 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  publish-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Ensure Upcoming Queue Buffer (Seasonal AI Generator)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/generate_ai_posts.py
+
+      - name: Run Publish Engine (Process Scheduled Queue & Update llms.txt)
+        run: |
+          python publish_engine.py
+
+      - name: Commit and Push Changes to Main
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No new updates to commit."
+          else
+            git commit -m "chore(auto-publish): release regular medical column & update GEO knowledge base [skip ci]"
+            git push origin main
+          fi
