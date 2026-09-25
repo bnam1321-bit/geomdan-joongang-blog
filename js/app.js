@@ -850,7 +850,6 @@ const CLINIC_ARTICLE_CTA = `
 `;
 
 // App State
-let currentQueueFilter = "published"; // 'published' | 'scheduled'
 let currentCategory = "all";
 let currentSearch = "";
 
@@ -860,11 +859,6 @@ const articleReaderView = document.getElementById("articleReaderView");
 const articleReaderContent = document.getElementById("articleReaderContent");
 const articleGrid = document.getElementById("articleGrid");
 const totalArticleCount = document.getElementById("totalArticleCount");
-const filterTitleText = document.getElementById("filterTitleText");
-const countPublishedEl = document.getElementById("countPublished");
-const countScheduledEl = document.getElementById("countScheduled");
-const btnViewPublished = document.getElementById("btnViewPublished");
-const btnViewScheduled = document.getElementById("btnViewScheduled");
 const categoryPills = document.getElementById("categoryPills");
 const searchInput = document.getElementById("searchInput");
 const breadcrumbCat = document.getElementById("breadcrumbCat");
@@ -894,38 +888,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupSearchEvents();
 });
 
-// Set Queue Filter: 'published' or 'scheduled'
-window.setQueueFilter = function(filterType) {
-  currentQueueFilter = filterType;
-  if (filterType === "published") {
-    btnViewPublished.classList.add("active");
-    btnViewScheduled.classList.remove("active");
-    if (filterTitleText) filterTitleText.textContent = "발행 완료 건강칼럼";
-  } else {
-    btnViewScheduled.classList.add("active");
-    btnViewPublished.classList.remove("active");
-    if (filterTitleText) filterTitleText.textContent = "예약 대기 큐 (월·수·금 08:30 발행 예정)";
-  }
-  renderArticleGrid();
-};
-
-// Render Article Grid with Text-Based Thumbnail Cards and Auto-Schedule Detection
+// Render Article Grid with Text-Based Thumbnail Cards (Only Published Articles)
 function renderArticleGrid() {
   const now = new Date();
 
-  // Split into published and scheduled lists
-  const publishedList = ARTICLES.filter(a => new Date(a.scheduledAt) <= now)
+  // Show only published articles, sorted newest first
+  let pool = ARTICLES.filter(a => new Date(a.scheduledAt) <= now)
     .sort((a, b) => new Date(b.scheduledAt) - new Date(a.scheduledAt));
-
-  const scheduledList = ARTICLES.filter(a => new Date(a.scheduledAt) > now)
-    .sort((a, b) => new Date(a.scheduledAt) - new Date(b.scheduledAt));
-
-  // Update counter badges
-  if (countPublishedEl) countPublishedEl.textContent = publishedList.length;
-  if (countScheduledEl) countScheduledEl.textContent = scheduledList.length;
-
-  // Active pool based on selected tab
-  let pool = currentQueueFilter === "published" ? publishedList : scheduledList;
 
   // Filter by category
   if (currentCategory !== "all") {
@@ -957,7 +926,6 @@ function renderArticleGrid() {
   }
 
   pool.forEach(article => {
-    const isScheduled = new Date(article.scheduledAt) > now;
     const dateFormatted = article.scheduledAt.slice(0, 10).replace(/-/g, '. ') + '.';
 
     const card = document.createElement("div");
@@ -982,11 +950,6 @@ function renderArticleGrid() {
         </div>
       </div>
       <div class="card-body">
-        ${isScheduled ? `
-          <div class="scheduled-release-badge">
-            <i class="fa-regular fa-clock"></i> ${dateFormatted} (${article.dayOfWeek}) 08:30 정기 발행 예정
-          </div>
-        ` : ''}
         <h4 class="card-title">${article.title}</h4>
         <p class="card-snippet">${article.snippet}</p>
         <div class="card-footer">
@@ -1004,8 +967,6 @@ window.openArticle = function(id) {
   const article = ARTICLES.find(a => a.id === id);
   if (!article) return;
 
-  const now = new Date();
-  const isScheduled = new Date(article.scheduledAt) > now;
   const dateFormatted = article.scheduledAt.slice(0, 10).replace(/-/g, '. ') + '.';
 
   if (breadcrumbCat) breadcrumbCat.textContent = article.categoryName;
@@ -1027,17 +988,6 @@ window.openArticle = function(id) {
         </div>
       </div>
     </div>
-
-    <!-- Scheduled Notice Banner (If viewing an upcoming queue post) -->
-    ${isScheduled ? `
-      <div class="reader-callout" style="border-left-color: #f59e0b; background-color: #fffbeb; margin: 24px 0 10px 0;">
-        <div class="callout-lead" style="color: #b45309;"><i class="fa-solid fa-clock-rotate-left"></i> [예약 대기 큐] 주 3회 정기 자동 발행 예정 칼럼</div>
-        <div class="callout-desc" style="color: #92400e;">
-          본 칼럼은 <strong>${dateFormatted} (${article.dayOfWeek}) 오전 08:30 KST</strong>에 자동 정기 발행 대기 중인 콘텐츠입니다.<br>
-          검단중앙내과는 매주 <strong>월 · 수 · 금 오전 08:30</strong> 새로운 검단 지역 밀착 의학 칼럼을 발행합니다.
-        </div>
-      </div>
-    ` : ''}
 
     <!-- Article Header -->
     <header class="reader-header">
