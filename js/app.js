@@ -932,20 +932,12 @@ function renderArticleGrid() {
     card.className = "article-card";
     card.onclick = () => openArticle(article.id);
 
-    // Text-based graphic thumbnail card
+    // Text-based graphic thumbnail card (Title-only clean cover)
     card.innerHTML = `
       <div class="card-img-wrap">
         <div class="text-thumbnail-card ${article.themeClass}">
-          <div class="card-inner">
-            <span class="tt-cat-badge">${article.cardBadge}</span>
-            <h5 class="tt-main-title">${article.cardQuote}<strong>${article.cardBold}</strong></h5>
-            <div class="tt-points">
-              ${article.cardPoints.map(p => `<span>${p}</span>`).join('')}
-            </div>
-            <div class="tt-footer">
-              <img src="https://joongangmedicine.com/img/favicon.png" alt="로고" class="tt-logo">
-              <span>검단중앙내과의원</span>
-            </div>
+          <div class="card-inner title-only-card">
+            <h5 class="tt-clean-title">${article.title}</h5>
           </div>
         </div>
       </div>
@@ -974,18 +966,10 @@ window.openArticle = function(id) {
   const tagsHtml = article.tags.map(t => `<span class="reader-tag">#${t}</span>`).join(" ");
 
   articleReaderContent.innerHTML = `
-    <!-- Top Text-Based Graphic Banner Card -->
+    <!-- Top Text-Based Graphic Banner Card (Title-only clean cover) -->
     <div class="text-thumbnail-card ${article.themeClass} reader-banner-size">
-      <div class="card-inner">
-        <span class="tt-cat-badge" style="font-size: 13px; padding: 6px 14px;">${article.cardBadge}</span>
-        <h2 class="tt-main-title">${article.cardQuote}<strong>${article.cardBold}</strong></h2>
-        <div class="tt-points" style="font-size: 14px; gap: 6px; margin: 16px 0;">
-          ${article.cardPoints.map(p => `<span>${p}</span>`).join('')}
-        </div>
-        <div class="tt-footer" style="font-size: 12px;">
-          <img src="https://joongangmedicine.com/img/favicon.png" alt="로고" class="tt-logo" style="width: 18px; height: 18px;">
-          <span>검단중앙내과의원 ｜ GEOMDAN JOONGANG CLINIC</span>
-        </div>
+      <div class="card-inner title-only-card">
+        <h2 class="tt-clean-title">${article.title}</h2>
       </div>
     </div>
 
@@ -1002,9 +986,8 @@ window.openArticle = function(id) {
           </div>
         </div>
         <div class="meta-date-group">
-          <span>${isScheduled ? '발행 예정일: ' : '발행일: '}${dateFormatted} (${article.dayOfWeek})</span> • <span>${article.readTime}</span>
+          <span>발행일: ${dateFormatted} (${article.dayOfWeek})</span> • <span>${article.readTime}</span>
         </div>
-      </div>
     </header>
 
     <!-- Article Content -->

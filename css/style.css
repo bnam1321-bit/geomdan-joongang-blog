@@ -592,12 +592,51 @@ button {
   color: #38bdf8;
 }
 
-.reader-banner-size .tt-main-title {
-  font-size: 22px;
-}
 .reader-banner-size .tt-main-title strong {
   font-size: 25px;
   color: #38bdf8;
+}
+
+/* Title-Only Clean Graphic Thumbnail Card */
+.card-inner.title-only-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 24px 20px;
+}
+
+.tt-clean-title {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.48;
+  color: #ffffff;
+  word-break: keep-all;
+  margin: 0;
+  letter-spacing: -0.4px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.featured-size .card-inner.title-only-card {
+  padding: 36px 30px;
+}
+
+.featured-size .tt-clean-title {
+  font-size: 22px;
+  line-height: 1.42;
+  max-width: 90%;
+}
+
+.reader-banner-size .card-inner.title-only-card {
+  padding: 44px 32px;
+}
+
+.reader-banner-size .tt-clean-title {
+  font-size: 24px;
+  line-height: 1.4;
+  max-width: 90%;
 }
 
 .tt-points {
