@@ -1,5 +1,38 @@
 [
   {
+    "id": 4,
+    "scheduledAt": "2026-09-28T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장내시경 검사 전날, 커피와 음식 언제까지 먹어도 될까요?\" 안전한 검사를 위한 장정결 가이드",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "위·대장 내시경 클리닉",
+    "cardQuote": "\"검사 전날 커피 한 잔, 정말 안 될까?\"",
+    "cardBold": "대장내시경 음식 조절 & 복약 수칙",
+    "cardPoints": [
+      "• 3일 전 피해야 할 음식(씨 있는 과일, 해조류)",
+      "• 검사 전날 식사와 커피 가능 시간대",
+      "• 알약 장정결제 복용 팁과 수분 섭취"
+    ],
+    "snippet": "대장내시경의 정확도는 장이 얼마나 깨끗하게 비워졌는지에 달려 있습니다. 소화기내시경 세부전문의가 3일 전 식단부터 검사 당일까지 꼭 지켜야 할 장정결 팁을 짚어드립니다.",
+    "tags": [
+      "대장내시경전날음식",
+      "대장내시경커피",
+      "장정결제",
+      "알약장정결제",
+      "검단대장내시경",
+      "불로동내시경",
+      "소화기내과"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 09. 28."
+  },
+  {
     "id": 3,
     "scheduledAt": "2026-09-25T08:30:00+09:00",
     "dayOfWeek": "금요일",
