@@ -1,5 +1,38 @@
 [
   {
+    "id": 5,
+    "scheduledAt": "2026-09-30T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"위암 검진 2년 주기, 왜 아무 증상이 없어도 꼭 받아야 할까요?\" 조기 위암 5년 생존율 90%의 진실",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "5대암 국가건강검진",
+    "cardQuote": "\"안 아픈데 위내시경을 왜 또 받나요?\"",
+    "cardBold": "조기 위암 발견과 내시경 절제술의 비밀",
+    "cardPoints": [
+      "• 초기 위암은 80% 이상 무증상으로 진행",
+      "• 2년 주기 위내시경 시 조기 발견율 90% 이상",
+      "• 개복 수술 없이 내시경만으로 치료 가능한 단계"
+    ],
+    "snippet": "조기 위암은 조기에만 발견하면 수술 없이 내시경 시술만으로도 완치가 가능합니다. 만 40세 이상 남녀라면 증상이 없어도 2년마다 국가 위암검진을 놓쳐서는 안 되는 이유를 설명합니다.",
+    "tags": [
+      "위암검진",
+      "위내시경주기",
+      "조기위암",
+      "국가암검진",
+      "검단위내시경",
+      "불로동위내시경",
+      "위암생존율"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 09. 30."
+  },
+  {
     "id": 4,
     "scheduledAt": "2026-09-28T08:30:00+09:00",
     "dayOfWeek": "월요일",
