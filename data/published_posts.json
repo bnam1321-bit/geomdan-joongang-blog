@@ -1,5 +1,39 @@
 [
   {
+    "id": 6,
+    "scheduledAt": "2026-10-02T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "vaccine",
+    "categoryName": "예방접종·수액",
+    "title": "\"올가을 독감 백신, 언제 맞는 게 가장 효과적일까요?\" 2026-2027절기 인플루엔자 & 면역 회복 수액",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-vaccine",
+    "cardBadge": "2026-2027 예방접종 클리닉",
+    "cardQuote": "\"올가을 독감 백신, 언제 맞는 게 가장 효과적일까?\"",
+    "cardBold": "인플루엔자 4가 백신 & 맞춤 영양수액",
+    "cardPoints": [
+      "• 9월 말 ~ 10월 중순 최적기 접종",
+      "• 폐렴구균·대상포진 시너지 동시접종 권장",
+      "• 1:1 맞춤 피로회복 & 면역강화 수액"
+    ],
+    "snippet": "독감은 일반 감기와 다릅니다! 2026-2027절기 독감 4가 백신 접종 적기와 폐렴구균 동시 접종, 환절기 피로회복 수액 솔루션.",
+    "tags": [
+      "독감예방접종",
+      "독감백신",
+      "폐렴구균접종",
+      "대상포진접종",
+      "피로회복수액",
+      "면역수액",
+      "검단내과",
+      "불로동수액"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 10. 02."
+  },
+  {
     "id": 5,
     "scheduledAt": "2026-09-30T08:30:00+09:00",
     "dayOfWeek": "수요일",
