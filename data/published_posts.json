@@ -1,5 +1,38 @@
 [
   {
+    "id": 7,
+    "scheduledAt": "2026-10-05T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"대장 용종, 발견하면 왜 당일 바로 떼야 할까요?\" 선종성 용종과 대장암 예방의 진실",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "소화기내시경 세부전문의",
+    "cardQuote": "\"용종 떼러 큰 병원 다시 가야 하나요?\"",
+    "cardBold": "검단중앙내과 당일 원스톱 용종절제술",
+    "cardPoints": [
+      "• 대장암의 95%는 선종성 용종에서 시작",
+      "• 검사 현장에서 즉시 제거하는 원스톱 시술",
+      "• 시술 후 주의사항과 안전한 조직검사 연계"
+    ],
+    "snippet": "대장 용종은 대장암으로 발전하는 씨앗입니다. 검단중앙내과는 수만 건의 시술 경험을 가진 세부전문의가 검사 중 발견 즉시 당일 용종절제술을 시행하여 두 번 검사받는 불편을 없앱니다.",
+    "tags": [
+      "대장용종",
+      "용종절제술",
+      "당일용종절제",
+      "대장암예방",
+      "선종성용종",
+      "검단대장내시경",
+      "불로동용종제거"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 10. 05."
+  },
+  {
     "id": 6,
     "scheduledAt": "2026-10-02T08:30:00+09:00",
     "dayOfWeek": "금요일",
