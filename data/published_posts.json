@@ -1,5 +1,39 @@
 [
   {
+    "id": 8,
+    "scheduledAt": "2026-10-07T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"건강검진 혈액검사에서 간 수치(AST/ALT)가 높다면?\" 침묵의 장기가 보내는 지방간·간염 신호",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "간질환 & 초음파 클리닉",
+    "cardQuote": "\"술도 안 마시는데 간 수치가 왜 높죠?\"",
+    "cardBold": "비알코올성 지방간과 상복부 초음파 검진",
+    "cardPoints": [
+      "• AST/ALT, 감마GTP 수치의 정확한 의미",
+      "• 비알코올성 지방간과 대사증후군 연관성",
+      "• 초음파 검사를 통한 간경화·간암 조기 감별"
+    ],
+    "snippet": "간은 70% 이상 망가져도 통증이 없는 침묵의 장기입니다. 건강검진 결과표에서 간 수치 이상을 발견했을 때 당황하지 않고 원인을 감별하는 법과 정밀 초음파 검진의 중요성을 전합니다.",
+    "tags": [
+      "간수치",
+      "ASTALT",
+      "지방간",
+      "상복부초음파",
+      "간초음파",
+      "검단건강검진",
+      "불로동간초음파",
+      "만성피로"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 10. 07."
+  },
+  {
     "id": 7,
     "scheduledAt": "2026-10-05T08:30:00+09:00",
     "dayOfWeek": "월요일",
