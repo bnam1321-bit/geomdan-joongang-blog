@@ -1,5 +1,39 @@
 [
   {
+    "id": 9,
+    "scheduledAt": "2026-10-09T08:30:00+09:00",
+    "dayOfWeek": "금요일",
+    "category": "sunday",
+    "categoryName": "일요일진료·병원소식",
+    "title": "\"혈압약 한 번 먹기 시작하면 평생 못 끊나요?\" 고혈압의 오해와 심뇌혈관 질환 예방 원칙",
+    "author": "김인선 원장",
+    "authorRole": "가정의학과 전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_02.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-sunday",
+    "cardBadge": "만성질환 집중 케어",
+    "cardQuote": "\"약 먹기 무서워서 버티고 계신가요?\"",
+    "cardBold": "고혈압 약물 치료의 오해와 혈관 보호",
+    "cardPoints": [
+      "• 혈압약을 일찍 시작해야 뇌졸중·심근경색 예방",
+      "• 생활습관 개선으로 약 용량 조절 및 감량 가능",
+      "• 평일 야간 & 일요일 오전 진료로 정기 처방 관리"
+    ],
+    "snippet": "혈압약을 평생 먹을까 봐 복용을 주저하시는 분들이 많습니다. 하지만 혈압약은 중독되는 약이 아니라 혈관을 보호하는 든든한 방패입니다. 가정의학과 전문의가 올바른 혈압 관리법을 알려드립니다.",
+    "tags": [
+      "고혈압약",
+      "혈압관리",
+      "만성질환",
+      "뇌졸중예방",
+      "불로동내과",
+      "신검단중앙역내과",
+      "검단일요일내과",
+      "가정의학과"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 10. 09."
+  },
+  {
     "id": 8,
     "scheduledAt": "2026-10-07T08:30:00+09:00",
     "dayOfWeek": "수요일",
