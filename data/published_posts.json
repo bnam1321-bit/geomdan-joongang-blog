@@ -1,5 +1,38 @@
 [
   {
+    "id": 10,
+    "scheduledAt": "2026-10-12T08:30:00+09:00",
+    "dayOfWeek": "월요일",
+    "category": "endoscopy",
+    "categoryName": "위·대장 내시경 클리닉",
+    "title": "\"수면내시경, 자고 일어났는데 왜 아무 기억이 안 날까요?\" 안전한 진정내시경 원리와 회복 가이드",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "3분 소요",
+    "themeClass": "theme-endoscopy",
+    "cardBadge": "안심 수면내시경",
+    "cardQuote": "\"수면내시경 중 헛소리할까 봐 겁나요\"",
+    "cardBold": "미다졸람·프로포폴 진정 원리와 안전 수칙",
+    "cardPoints": [
+      "• 전신마취가 아닌 의식하 진정(수면) 요법의 차이",
+      "• 1:1 맥박·산소포화도 실시간 자동 감시",
+      "• 검사 후 운전 금지 및 안전 귀가 수칙"
+    ],
+    "snippet": "수면내시경은 전신마취가 아닌 의식하 진정 요법으로, 잠든 상태에서 불안과 통증 없이 검사를 마칠 수 있는 안전한 방법입니다. 검단중앙내과의 철저한 1:1 수면 모니터링 시스템을 소개합니다.",
+    "tags": [
+      "수면내시경",
+      "수면내시경마취",
+      "진정내시경",
+      "내시경회복",
+      "검단수면내시경",
+      "불로동내과",
+      "소화기내과"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 10. 12."
+  },
+  {
     "id": 9,
     "scheduledAt": "2026-10-09T08:30:00+09:00",
     "dayOfWeek": "금요일",
