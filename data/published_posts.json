@@ -1,5 +1,38 @@
 [
   {
+    "id": 11,
+    "scheduledAt": "2026-10-14T08:30:00+09:00",
+    "dayOfWeek": "수요일",
+    "category": "checkup",
+    "categoryName": "5대암·국가건강검진",
+    "title": "\"국가 대장암 분변잠혈검사에서 '양성'이 나왔다면?\" 당황하지 않고 대장내시경 받는 법",
+    "author": "노인영 대표원장",
+    "authorRole": "내과 전문의 / 소화기내시경 세부전문의",
+    "authorAvatar": "https://joongangmedicine.com/img/main/doctor/thum_doc_01.png",
+    "readTime": "4분 소요",
+    "themeClass": "theme-checkup",
+    "cardBadge": "국가 대장암 검진",
+    "cardQuote": "\"대변검사에서 피가 섞여 나왔다는데 암일까요?\"",
+    "cardBold": "분변잠혈 양성 판정과 대장내시경 국가지원",
+    "cardPoints": [
+      "• 분변잠혈 양성이 암을 뜻하지는 않습니다",
+      "• 용종, 치질, 염증성 질환 등 정밀 감별 필요",
+      "• 국가 지원으로 대장내시경 무료/본인부담 절감"
+    ],
+    "snippet": "대변검사에서 잠혈 양성 통보를 받으시면 덜컥 겁부터 내시는 경우가 많습니다. 분변잠혈은 작은 용종이나 치핵에 의해서도 나타나므로, 세부전문의 대장내시경을 통해 원인을 정확히 찾는 것이 급선무입니다.",
+    "tags": [
+      "분변잠혈검사",
+      "대변검사양성",
+      "대장암검진",
+      "혈변원인",
+      "대장내시경검사",
+      "검단건강검진",
+      "불로동내과"
+    ],
+    "status": "published",
+    "publishedDateStr": "2026. 10. 14."
+  },
+  {
     "id": 10,
     "scheduledAt": "2026-10-12T08:30:00+09:00",
     "dayOfWeek": "월요일",
