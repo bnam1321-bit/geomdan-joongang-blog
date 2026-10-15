@@ -51,6 +51,29 @@ FORBIDDEN_PATTERNS = [
 ALLOWED_CATEGORIES = {"endoscopy", "checkup", "sunday", "vaccine"}
 
 
+def sanitize_medical_text(text):
+    """의료법상 주의해야 하는 상투적 과장/단언 표현을 자연스러운 전문의 표현으로 순화"""
+    if not text:
+        return text
+    text = re.sub(r'확실한', '정확한', text)
+    text = re.sub(r'확실하게', '정확하게', text)
+    text = re.sub(r'완벽한', '세심한', text)
+    text = re.sub(r'완벽하게', '세심하게', text)
+    text = re.sub(r'완치율', '치료율', text)
+    text = re.sub(r'완치', '호전 및 회복', text)
+    text = re.sub(r'유일한', '핵심적인', text)
+    text = re.sub(r'유일하게', '핵심적으로', text)
+    text = re.sub(r'100\s*%', '매우 높은', text)
+    text = re.sub(r'부작용\s*(이\s*)?없는', '부담을 낮춘', text)
+    text = re.sub(r'대학\s*병원\s*급', '상급 의료기관 수준의', text)
+    text = re.sub(r'수만\s*건|수천\s*건', '수많은 임상 경험', text)
+    text = re.sub(r'당일\s*원스톱', '원내 직접', text)
+    text = re.sub(r'0\.1\s*mm', '미세한', text)
+    text = re.sub(r'추천합니다', '권해드립니다', text)
+    text = re.sub(r'잘하는\s*곳', '믿을 수 있는 의원', text)
+    return text
+
+
 def find_violations(text):
     """주어진 텍스트에서 금지 패턴을 찾아 [(매칭문구, 사유)] 반환"""
     found = []

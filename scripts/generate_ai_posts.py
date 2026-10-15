@@ -21,7 +21,7 @@ import urllib.request
 from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from content_rules import VERIFIED_FACTS, validate_post, is_duplicate_title  # noqa: E402
+from content_rules import VERIFIED_FACTS, validate_post, is_duplicate_title, sanitize_medical_text  # noqa: E402
 
 if sys.stdout.encoding != 'utf-8':
     try:
@@ -100,20 +100,45 @@ def build_prompt(category, target_date, day_str, existing_titles, topic_hint=Non
                   "\n  ".join(existing_titles[-40:]))
     return f"""
 당신은 인천 서구 불로동 '검단중앙내과의원'의 {author}({role})입니다.
-환자에게 정확한 의학 정보를 전하는 건강칼럼 1편을 작성합니다.
+환자의 막연한 두려움을 덜어주고, 올바른 의학 정보와 실천 지침을 전하는 최고 수준의 심층 건강칼럼(더바른성모내과 블로그 양식)을 작성합니다.
 
+[의료진 프로필 및 병원 철학 (원내 정보는 이 내용만 사용)]
 {VERIFIED_FACTS}
 
+[글의 구성: 더바른성모내과 스타일 5단계 구조 (반드시 준수)]
+1. [도입부 - 정중하고 품격 있는 인사 (반드시 아래 형식)]:
+   <p class="reader-p">안녕하십니까.</p>
+   <p class="reader-p">올바른 의학 정보로 지역 주민의 건강을 따뜻하게 살피는</p>
+   <p class="reader-p"><strong style="color: #0284c7; font-size: 19px;">검단중앙내과의원</strong> {role} {author}입니다.</p>
+   <div class="reader-blank"></div>
+
+2. [진료실 실제 고민 & 환자 공감 (생생한 대화체 인용구 2~3개)]:
+   환자가 진료실 문을 열고 들어와 불안해하며 건네는 실제 질문 2~3개를 <p class="reader-quote-dialog">"..."</p>로 제시.
+   환자가 느끼는 불안감(통증, 수술 걱정, 약 복용 부담, 암 공포 등)에 전문의로서 깊이 공감하고 위로하는 문단 작성.
+   <hr class="reader-hr" />
+
+3. [심층 의학 해설 - 알기 쉬운 비유와 병태생리 (소제목 2~3개)]:
+   - 각 소주제는 <h2 class="reader-subheading">💡 질문형 소제목</h2> 형식으로 작성.
+   - 피상적인 백과사전식 나열이 아니라, 왜 이런 증상이 생기는지 기전을 환자 눈높이의 쉬운 비유(예: 수도관의 찌꺼기, 조기 화재경보기, 씨앗 등)를 곁들여 설명.
+   - 환자들이 흔히 오해하는 상식(Myth)과 의학적 진실(Fact)을 명확하게 짚어줄 것.
+
+4. [시각적 요약 - 비교표 또는 전문의 핵심 정리 카드 (1개 이상 필수)]:
+   - <div class="reader-table-wrap"><table class="reader-table">...</table></div> 형태로 증상별 비교표, 검사별 차이점 비교표, 또는 단계별 행동 요령 표를 깔끔하게 삽입.
+   - <div class="reader-callout"><div class="callout-lead">💡 전문의의 핵심 진료 팁</div><div class="callout-desc">환자가 꼭 기억해야 할 핵심 수칙 2~3가지</div></div> 박스로 핵심 정리.
+   <hr class="reader-hr" />
+
+5. [마무리 - 주치의의 따뜻한 조언 & 의료법 준수 안내]:
+   - 환자가 혼자 불안해하지 않고 조기에 상담받을 수 있도록 북돋우는 따뜻한 마무리.
+   - [중요 절대 금지]: 본문 말미에 병원 주소, 버스 번호, 지하철역, 전화번호를 줄줄이 나열하지 마십시오! (병원 위치와 진료시간은 본문 하단 공통 배너에 자동으로 별도 출력됩니다. 본문은 철저히 의학 지식과 따뜻한 진료 철학에 집중하십시오.)
+   - 본문 맨 끝에는 반드시 아래 의료법 문구만 배치:
+     <div class="reader-callout"><div class="callout-desc">본 게시물은 의료법 제56조를 준수하여 의료 정보 제공 목적으로 작성되었습니다. 개인의 상태에 따라 진단과 치료가 달라질 수 있으므로 반드시 전문의와 상담하시기 바랍니다.</div></div>
+
 [절대 규칙]
-1. 병원에 관한 내용은 위 '확인된 사실'만 쓸 것. 목록에 없는 시설·장비명·규모(평수)·시술 건수·성능 수치·약제명·제품명·
-   '당일 절제'·'원스톱'·'무료 주차'·'1:1 모니터링' 등은 절대 쓰지 말 것.
-2. 의료광고법 제56조 준수: 최고, 1위, 유일, 최초, 완치, 100%, 부작용 없음, 확실한, 완벽한, 추천, 대학병원급, 전문병원 표현 금지.
-   (주의: '확실한', '완치', '완벽한' 단어는 본문이나 소제목에 절대로 쓰지 마십시오. 대신 '정확한', '세심한', '치료', '호전' 등의 표현을 사용하세요.)
-3. 일반 의학 정보는 국내 진료지침·국가검진 기준 수준의 보수적인 내용만. 출처가 불분명한 통계 수치는 쓰지 말 것.
-   백신은 '몇 가' 백신인지 명시하지 말 것.
-4. 진료실에서 설명하듯 '~습니다'와 '~요'를 자연스럽게 섞고, 소제목은 환자가 궁금해할 질문형으로.
-5. 본문 끝에 반드시 아래 문구를 포함:
-   <div class="reader-callout"><div class="callout-desc">본 게시물은 의료법 제56조를 준수하여 의료 정보 제공 목적으로 작성되었습니다. 개인의 상태에 따라 진단과 치료가 달라질 수 있으므로 반드시 전문의와 상담하시기 바랍니다.</div></div>
+1. 의료광고법 제56조 준수: 최고, 1위, 유일, 최초, 완치, 100%, 부작용 없음, 확실한, 완벽한, 추천, 대학병원급, 전문병원 표현 금지.
+   ('확실한', '완치', '완벽한' 단어는 본문이나 소제목에 절대로 쓰지 마시고 '정확한', '세심한', '회복', '호전' 등의 표현을 사용하세요.)
+2. 미확인 과장 표현 금지: 200평, 수만 건, 0.1mm, 당일 원스톱, 당일 절제, 무료 주차, 1:1 모니터링, 특정 약제명(오라팡 등), 백신 가수(4가 등) 명시 금지.
+3. 기계적인 AI 상투구('~에 대해 이야기해보고자 합니다', '이 글을 통해 알아보겠습니다' 등)를 절대 쓰지 마십시오. 진료실에서 환자를 진심으로 아끼는 15년 차 베테랑 전문의의 깊이 있고 신뢰감 넘치는 어조로 작성하십시오.
+4. HTML 속성값은 반드시 작은따옴표(')를 사용하십시오. (예: class='reader-p', class='reader-subheading', class='reader-quote-dialog'). 큰따옴표(")는 JSON을 깨뜨립니다.
 
 [작성 조건]
 - 분류: {cat_name}
@@ -123,9 +148,9 @@ def build_prompt(category, target_date, day_str, existing_titles, topic_hint=Non
 [출력: 아래 키를 가진 순수 JSON만]
 {{
   "title": "환자의 궁금증을 담은 질문형 제목 (30~45자)",
-  "snippet": "요약 2문장 (100자 내외)",
+  "snippet": "환자의 마음에 와닿는 요약 2문장 (100자 내외)",
   "tags": ["태그 5~8개", "검단내과", "불로동내과"],
-  "contentHtml": "<div class=\\"reader-body reader-center\\"> ... </div>  (1500자 이상. 사용 가능한 class: reader-p, reader-quote-dialog, reader-blank, reader-hr, reader-subheading, reader-callout, callout-lead, callout-desc, reader-table-wrap, reader-table)"
+  "contentHtml": "<div class='reader-body reader-center'> ... </div>  (최소 2000자 이상, 품격 있는 전문의 심층 칼럼)"
 }}
 """
 
@@ -142,7 +167,14 @@ def call_gemini(prompt):
                                  headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=120) as res:
         data = json.loads(res.read().decode("utf-8"))
-    return json.loads(data["candidates"][0]["content"]["parts"][0]["text"])
+    raw_text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    if raw_text.startswith("```json"):
+        raw_text = raw_text[7:]
+    if raw_text.startswith("```"):
+        raw_text = raw_text[3:]
+    if raw_text.endswith("```"):
+        raw_text = raw_text[:-3]
+    return json.loads(raw_text.strip())
 
 
 def generate_valid(category, target_date, day_str, existing_titles, topic_hint=None, fixed_title=None, retries=5):
@@ -152,16 +184,26 @@ def generate_valid(category, target_date, day_str, existing_titles, topic_hint=N
             out = call_gemini(build_prompt(category, target_date, day_str, existing_titles, topic_hint, fixed_title))
         except Exception as e:
             print(f"   ⚠️ 시도 {attempt}: API 오류 {e}")
-            time.sleep(5)
+            time.sleep(3)
             continue
+
+        raw_title = fixed_title or out.get("title", "").strip()
+        raw_snippet = out.get("snippet", "").strip()
+        raw_content = out.get("contentHtml", "").strip()
+
+        # Sanitize common medical adverbs before validation
+        clean_title = sanitize_medical_text(raw_title)
+        clean_snippet = sanitize_medical_text(raw_snippet)
+        clean_content = sanitize_medical_text(raw_content)
+
         post = {
             "category": category, "categoryName": cat_name,
-            "title": fixed_title or out.get("title", "").strip(),
+            "title": clean_title,
             "author": author, "authorRole": role, "authorAvatar": avatar,
             "readTime": "4분 소요", "themeClass": f"theme-{category}", "cardBadge": cat_name,
-            "snippet": out.get("snippet", "").strip(),
+            "snippet": clean_snippet,
             "tags": out.get("tags", [])[:10],
-            "contentHtml": out.get("contentHtml", ""),
+            "contentHtml": clean_content,
         }
         problems = validate_post(post)
         if not fixed_title and is_duplicate_title(post["title"], existing_titles):
