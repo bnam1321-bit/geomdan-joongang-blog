@@ -22,15 +22,30 @@ KST = timezone(timedelta(hours=9))
 def run_publish_engine(force_now=None):
     now = force_now if force_now else datetime.now(KST)
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    queue_file = os.path.join(base_dir, "data", "posts_queue.json")
+    queue_file = os.path.join(base_dir, "_private", "posts_queue.json")
+    legacy_queue_file = os.path.join(base_dir, "data", "posts_queue.json")
     published_file = os.path.join(base_dir, "data", "published_posts.json")
     
+    # Remove legacy queue file from data/ if exists to prevent public exposure
+    if os.path.exists(legacy_queue_file):
+        try:
+            os.remove(legacy_queue_file)
+            print(f"[Security] 공개 data/posts_queue.json 파일 삭제 완료 (비공개 _private 로 격리)")
+        except Exception as e:
+            print(f"[Warn] 레거시 큐 파일 삭제 실패: {e}")
+
     if not os.path.exists(queue_file):
-        print(f"[Error] 큐 파일이 존재하지 않습니다: {queue_file}")
+        print(f"[Error] 비공개 큐 파일이 존재하지 않습니다: {queue_file}")
         return
 
     with open(queue_file, "r", encoding="utf-8") as f:
         queue = json.load(f)
+
+    sys.path.insert(0, os.path.join(base_dir, "scripts"))
+    try:
+        from content_rules import validate_post
+    except ImportError:
+        validate_post = None
 
     published = []
     scheduled = []
@@ -39,6 +54,10 @@ def run_publish_engine(force_now=None):
         # ISO parse
         sched_time = datetime.fromisoformat(item["scheduledAt"])
         if sched_time <= now:
+            if validate_post:
+                problems = validate_post(item, require_body=False)
+                if problems:
+                    print(f"⚠️ [발행 경고] 게시글 ID {item.get('id')} 에 검증 문제 발견: {problems}")
             item_copy = dict(item)
             item_copy["status"] = "published"
             item_copy["publishedDateStr"] = sched_time.strftime("%Y. %m. %d.")

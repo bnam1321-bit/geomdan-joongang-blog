@@ -1,0 +1,7 @@
+# Vercel deployment ignore
+_private/
+scripts/
+.github/
+.env*
+*.py
+*.md
