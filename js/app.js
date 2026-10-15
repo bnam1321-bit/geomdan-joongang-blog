@@ -187,6 +187,7 @@ window.openArticle = function(id) {
         <div class="meta-date-group">
           <span>발행일: ${dateFormatted} (${article.dayOfWeek})</span> • <span>${article.readTime}</span>
         </div>
+      </div>
     </header>
 
     <!-- Article Content -->
