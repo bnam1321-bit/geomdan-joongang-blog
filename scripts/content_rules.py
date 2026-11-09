@@ -46,31 +46,43 @@ FORBIDDEN_PATTERNS = [
     (r"[34]\s*가\s*(독감\s*)?백신", "백신 가수 명시 금지(절기별 변동)"),
     (r"전문\s*병원", "'전문병원'은 법정 지정 용어"),
     (r"최고|1위|유일|최초|완치|100\s*%|부작용\s*(이\s*)?없|확실한|완벽한|잘하는\s*곳|추천합니다", "의료광고법 금지 표현"),
+    (r"💡|🔬|🩺|✨|🔥|📌|✅|❗", "본문/소제목 내 AI 이모지 금지"),
+    (r"침묵의\s*(살인자|장기)|조기\s*화재\s*경보기|수도관의?\s*찌꺼기|마치\s*[^.]{2,30}와\s*같습니다|Myth|Fact\s*:|Myth\s*&\s*Fact|든든한\s*동반자", "전형적 AI 번역투·비유 상투어 금지"),
 ]
 
 ALLOWED_CATEGORIES = {"endoscopy", "checkup", "sunday", "vaccine"}
 
 
 def sanitize_medical_text(text):
-    """의료법상 주의해야 하는 상투적 과장/단언 표현을 자연스러운 전문의 표현으로 순화"""
+    """의료법상 주의해야 하는 상투적 과장/단언 표현 및 AI 상투어를 자연스러운 전문의 표현으로 순화"""
     if not text:
         return text
+    text = re.sub(r'[💡🔬🩺✨🔥📌✅❗]\s*', '', text)
     text = re.sub(r'확실한', '정확한', text)
     text = re.sub(r'확실하게', '정확하게', text)
     text = re.sub(r'완벽한', '세심한', text)
     text = re.sub(r'완벽하게', '세심하게', text)
-    text = re.sub(r'완치율', '치료율', text)
-    text = re.sub(r'완치', '호전 및 회복', text)
-    text = re.sub(r'유일한', '핵심적인', text)
-    text = re.sub(r'유일하게', '핵심적으로', text)
-    text = re.sub(r'100\s*%', '매우 높은', text)
-    text = re.sub(r'부작용\s*(이\s*)?없는', '부담을 낮춘', text)
-    text = re.sub(r'대학\s*병원\s*급', '상급 의료기관 수준의', text)
-    text = re.sub(r'수만\s*건|수천\s*건', '수많은 임상 경험', text)
+    text = re.sub(r'완치율', '치료 예후', text)
+    text = re.sub(r'완치에\s*가까운', '좋은 치료', text)
+    text = re.sub(r'완치될', '호전될', text)
+    text = re.sub(r'완치할', '치료할', text)
+    text = re.sub(r'완치를', '회복을', text)
+    text = re.sub(r'완치가', '치료가', text)
+    text = re.sub(r'완치', '치료 및 회복', text)
+    text = re.sub(r'유일한', '중요한', text)
+    text = re.sub(r'유일하게', '중점적으로', text)
+    text = re.sub(r'100\s*%\s*예방', '예방', text)
+    text = re.sub(r'100\s*%\s*막', '다 막', text)
+    text = re.sub(r'100\s*%', '대부분', text)
+    text = re.sub(r'부작용\s*(이\s*)?없는', '부담이 적은', text)
+    text = re.sub(r'대학\s*병원\s*급', '체계적인', text)
+    text = re.sub(r'수만\s*건|수천\s*건', '풍부한 임상 경험', text)
     text = re.sub(r'당일\s*원스톱', '원내 직접', text)
     text = re.sub(r'0\.1\s*mm', '미세한', text)
     text = re.sub(r'추천합니다', '권해드립니다', text)
-    text = re.sub(r'잘하는\s*곳', '믿을 수 있는 의원', text)
+    text = re.sub(r'잘하는\s*곳', '신뢰할 수 있는 의원', text)
+    text = re.sub(r'최고의', '세심한', text)
+    text = re.sub(r'최고\s*수준', '수준 높은', text)
     return text
 
 
