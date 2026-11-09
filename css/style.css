@@ -4,36 +4,38 @@
    ========================================================================== */
 
 :root {
-  --primary-navy: #0d2847;
-  --primary-blue: #0284c7;
-  --primary-deep-blue: #0369a1;
-  --accent-orange: #ea580c;
-  --accent-red: #e11d48;
-  --accent-green: #059669;
+  --primary-navy: #143642;
+  --primary-blue: #1b5e6b;
+  --primary-deep-blue: #0f2933;
+  --accent-orange: #b85d19;
+  --accent-red: #b91c1c;
+  --accent-green: #1f5c4b;
+  --accent-gold: #8c6d46;
   
-  --bg-page: #f8fafc;
+  --bg-page: #faf8f5;
   --bg-surface: #ffffff;
   --bg-card: #ffffff;
-  --bg-subtle: #f1f5f9;
+  --bg-subtle: #f3efe9;
   
-  --text-main: #1e293b;
-  --text-body: #334155;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
+  --text-main: #182226;
+  --text-body: #2c383d;
+  --text-muted: #5c6b73;
+  --text-light: #8d9aa1;
   
-  --border-light: #e2e8f0;
-  --border-subtle: #cbd5e1;
+  --border-light: #e6e1d8;
+  --border-subtle: #d4cdc0;
   
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.1);
-  --shadow-hover: 0 14px 30px rgba(2, 132, 199, 0.14);
+  --shadow-sm: 0 2px 6px rgba(20, 54, 66, 0.04);
+  --shadow-md: 0 8px 24px rgba(20, 54, 66, 0.07);
+  --shadow-lg: 0 14px 34px rgba(20, 54, 66, 0.1);
+  --shadow-hover: 0 14px 32px rgba(20, 54, 66, 0.13);
   
-  --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nanum Gothic", "Malgun Gothic", sans-serif;
+  --font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'MaruBuri', 'Nanum Myeongjo', Georgia, serif;
   --container-max: 1200px;
   --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
   --radius-full: 9999px;
 }
 
@@ -323,46 +325,75 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   3. Hero Section (Warm Editorial Medical Style)
+   3. Hero Section (Signature Medical Editorial Magazine Style)
 -------------------------------------------------------------------------- */
 .hero-section {
-  background-color: #f8faf9;
-  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, #f4f0e8 0%, #faf8f5 100%);
+  border-bottom: 1px solid var(--border-light);
   color: var(--text-main);
-  padding: 52px 0 56px;
+  padding: 58px 0 64px;
   position: relative;
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
-  gap: 40px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
   align-items: center;
 }
 
-.hero-eyebrow {
-  font-size: 13px;
+.hero-meta-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-subtle);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  margin-bottom: 22px;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-meta-tag {
+  font-size: 12.5px;
   font-weight: 700;
-  color: #1e4e68;
-  margin-bottom: 12px;
-  letter-spacing: -0.2px;
+  color: var(--primary-navy);
+}
+
+.hero-meta-divider {
+  width: 1px;
+  height: 11px;
+  background-color: var(--border-subtle);
+}
+
+.hero-meta-loc {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 .hero-heading {
-  font-size: clamp(23px, 3.8vw, 33px);
-  font-weight: 800;
-  color: #0f172a;
-  line-height: 1.4;
-  letter-spacing: -0.7px;
-  margin-bottom: 16px;
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 3.8vw, 40px);
+  font-weight: 700;
+  color: #142830;
+  line-height: 1.38;
+  letter-spacing: -0.8px;
+  margin-bottom: 20px;
   word-break: keep-all;
+}
+
+.hero-serif-accent {
+  color: var(--primary-blue);
+  border-bottom: 2px solid rgba(27, 94, 107, 0.25);
+  padding-bottom: 2px;
 }
 
 .hero-desc {
   font-size: clamp(14.5px, 2vw, 16px);
-  color: #475569;
-  line-height: 1.7;
-  margin-bottom: 26px;
+  color: #45545c;
+  line-height: 1.78;
+  margin-bottom: 30px;
   word-break: keep-all;
 }
 
@@ -376,16 +407,18 @@ button {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
-  padding: 12px 24px;
+  padding: 13px 26px;
   border-radius: var(--radius-sm);
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(20, 54, 66, 0.18);
 }
 
 .btn-hero-primary:hover {
-  background-color: #163a63;
+  background-color: var(--primary-deep-blue);
+  transform: translateY(-1px);
 }
 
 .btn-hero-secondary {
@@ -393,9 +426,9 @@ button {
   color: var(--text-main);
   font-weight: 600;
   font-size: 14px;
-  padding: 12px 22px;
+  padding: 13px 22px;
   border-radius: var(--radius-sm);
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border-subtle);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -403,76 +436,121 @@ button {
 }
 
 .btn-hero-secondary:hover {
-  background-color: #f1f5f9;
-  border-color: #94a3b8;
+  background-color: var(--bg-subtle);
+  border-color: #b5ac9c;
 }
 
-.hero-card-preview {
+/* Editorial Visual Showcase (Right Column) */
+.hero-visual-showcase {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.hero-stat-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-top: 3px solid var(--primary-navy);
+.showcase-main-frame {
+  position: relative;
   border-radius: var(--radius-md);
-  padding: 24px 24px;
-  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-md);
+  background-color: #ffffff;
+}
+
+.showcase-clinic-img {
   width: 100%;
-  max-width: 340px;
+  height: 225px;
+  object-fit: cover;
+  display: block;
+}
+
+.showcase-caption-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: #143642;
+  color: #f4f0e8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.showcase-doctors-dock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.dock-doc-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dock-doc-item:hover {
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.dock-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f3efe9;
+  border: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.dock-info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 2px;
 }
 
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  border-bottom: 1px solid #f1f5f9;
-  padding-bottom: 12px;
-}
-
-.stat-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.stat-label {
-  font-size: 12.5px;
-  color: #64748b;
-  font-weight: 500;
-}
-
-.stat-num {
-  font-size: 17px;
+.dock-info strong {
+  font-size: 14px;
   font-weight: 800;
-  color: var(--primary-navy);
-  letter-spacing: -0.3px;
+  color: var(--text-main);
+}
+
+.dock-info span {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  line-height: 1.35;
 }
 
 /* --------------------------------------------------------------------------
    4. Section Headers
 -------------------------------------------------------------------------- */
 .section-title-wrap {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
 .section-badge {
   display: inline-block;
-  font-size: 12.5px;
+  font-size: 12px;
   font-weight: 700;
-  color: #1e4e68;
-  background-color: #f1f5f9;
-  padding: 3px 10px;
+  color: var(--primary-navy);
+  background-color: #eae4da;
+  padding: 4px 11px;
   border-radius: 4px;
   margin-bottom: 8px;
+  letter-spacing: 0.3px;
 }
 
 .section-title {
-  font-size: 24px;
-  font-weight: 800;
+  font-family: var(--font-serif);
+  font-size: 25px;
+  font-weight: 700;
   color: var(--text-main);
   letter-spacing: -0.5px;
 }
@@ -484,7 +562,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-   5. Featured Article Hero Card & Editorial Typography Cover Cards
+   5. Featured Article Hero Card & Editorial Book-Cover Cards
 -------------------------------------------------------------------------- */
 .text-thumbnail-card {
   width: 100%;
@@ -492,87 +570,96 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 22px 22px;
-  color: #1e293b;
+  padding: 20px 22px;
+  color: #182226;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .text-thumbnail-card.featured-size {
-  min-height: 250px;
-  padding: 32px 30px;
+  min-height: 270px;
+  padding: 32px 32px;
   border-bottom: none;
-  border-right: 1px solid #e2e8f0;
+  border-right: 1px solid var(--border-light);
 }
 
-/* Calm Editorial Paper Themes by Category */
+/* Refined Book-Cover Paper Themes by Category */
 .text-thumbnail-card.theme-endoscopy {
-  background-color: #f3f7fa;
-  border-top: 4px solid #1e4e68;
+  background: linear-gradient(155deg, #eef4f6 0%, #e3edf0 100%);
+  border-left: 5px solid #143642;
 }
 .text-thumbnail-card.theme-checkup {
-  background-color: #f2f7f5;
-  border-top: 4px solid #1f5c4b;
+  background: linear-gradient(155deg, #eef5f1 0%, #e2ede7 100%);
+  border-left: 5px solid #1f5c4b;
 }
 .text-thumbnail-card.theme-sunday {
-  background-color: #f8f6f2;
-  border-top: 4px solid #6b4c35;
+  background: linear-gradient(155deg, #f6f1ea 0%, #ede5d8 100%);
+  border-left: 5px solid #7c5335;
 }
 .text-thumbnail-card.theme-vaccine {
-  background-color: #f4f5f8;
-  border-top: 4px solid #3b4d71;
-}
-
-.card-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  position: relative;
-  z-index: 1;
+  background: linear-gradient(155deg, #f0f2f7 0%, #e4e8f0 100%);
+  border-left: 5px solid #2d4363;
 }
 
 .card-inner.title-only-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
   text-align: left;
   height: 100%;
-  padding: 6px 4px;
-  gap: 10px;
+  padding: 2px 0;
+  gap: 12px;
+}
+
+.tt-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(20, 54, 66, 0.12);
+  padding-bottom: 8px;
 }
 
 .tt-cat-label {
   display: inline-block;
   font-size: 11.5px;
   font-weight: 700;
-  color: #475569;
-  background-color: rgba(255, 255, 255, 0.85);
-  border: 1px solid #cbd5e1;
-  padding: 3px 9px;
-  border-radius: 4px;
+  color: var(--primary-navy);
+  letter-spacing: -0.2px;
+}
+
+.tt-issue-num {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  font-weight: 700;
+  color: #6c7a80;
 }
 
 .tt-clean-title {
-  font-size: 17px;
-  font-weight: 800;
-  line-height: 1.48;
-  color: #0f172a;
+  font-family: var(--font-serif);
+  font-size: 16.5px;
+  font-weight: 700;
+  line-height: 1.52;
+  color: #142228;
   word-break: keep-all;
-  margin: 0;
-  letter-spacing: -0.4px;
+  margin: auto 0;
+  letter-spacing: -0.3px;
 }
 
-.featured-size .card-inner.title-only-card {
-  padding: 16px 12px;
+.tt-bottom-row {
+  border-top: 1px solid rgba(20, 54, 66, 0.1);
+  padding-top: 10px;
+  font-size: 12px;
+  color: #52636b;
+  font-weight: 600;
 }
 
 .featured-size .tt-clean-title {
   font-size: 21px;
-  line-height: 1.45;
+  line-height: 1.48;
 }
 
 .reader-banner-size .tt-clean-title {
@@ -671,23 +758,46 @@ button {
   color: var(--text-muted);
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.card-mini-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-subtle);
+  background-color: #f3efe9;
+}
+
+.card-author-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.card-meta .author {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.card-meta .role-sub {
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 .card-meta .sep {
   color: var(--border-subtle);
 }
 
-.card-meta .author i {
-  color: var(--primary-blue);
-}
-
 .featured-title {
+  font-family: var(--font-serif);
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-main);
-  line-height: 1.45;
+  line-height: 1.48;
   margin-bottom: 14px;
   word-break: keep-all;
 }
@@ -1033,13 +1143,14 @@ button {
 }
 
 .reader-title {
-  font-size: 30px;
-  font-weight: 900;
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
   color: var(--text-main);
-  line-height: 1.4;
+  line-height: 1.45;
   letter-spacing: -0.6px;
   word-break: keep-all;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .reader-meta-row {
@@ -1143,17 +1254,18 @@ button {
 }
 
 .reader-subheading {
+  font-family: var(--font-serif);
   display: block;
-  font-size: 20px;
-  font-weight: 800;
-  color: #0f172a;
+  font-size: 19.5px;
+  font-weight: 700;
+  color: #142830;
   background: none;
-  border-left: 4px solid var(--primary-navy);
+  border-left: 3.5px solid var(--primary-navy);
   padding: 2px 0 2px 14px;
   border-radius: 0;
-  margin: 36px 0 16px;
+  margin: 38px 0 16px;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .reader-img-card {
@@ -2008,13 +2120,18 @@ button {
   .hero-section {
     padding: 38px 0 44px;
   }
-  .hero-tags {
+  .hero-meta-bar {
+    flex-wrap: wrap;
+    border-radius: var(--radius-sm);
+    padding: 6px 12px;
     gap: 6px;
-    margin-bottom: 12px;
   }
-  .hero-pill {
-    font-size: 11px;
-    padding: 4px 10px;
+  .showcase-clinic-img {
+    height: 180px;
+  }
+  .showcase-doctors-dock {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
   .hero-desc {
     margin-bottom: 22px;
@@ -2029,15 +2146,6 @@ button {
     justify-content: center;
     padding: 12px 16px;
     font-size: 13.5px;
-  }
-  .hero-stat-card {
-    padding: 16px 14px;
-  }
-  .stat-num {
-    font-size: 20px;
-  }
-  .stat-label {
-    font-size: 11.5px;
   }
 
   /* Category Filter Section on Mobile */

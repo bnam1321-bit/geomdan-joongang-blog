@@ -89,26 +89,36 @@ function renderFeaturedArticle() {
   if (!card || !featured) return;
 
   const dateFormatted = featured.scheduledAt.slice(0, 10).replace(/-/g, '. ') + '.';
+  const numStr = String(featured.id).padStart(2, '0');
   card.onclick = () => openArticle(featured.id);
   card.innerHTML = `
     <div class="featured-img-wrap">
       <div class="text-thumbnail-card ${featured.themeClass} featured-size">
         <div class="card-inner title-only-card">
-          <span class="tt-cat-label">${featured.categoryName}</span>
+          <div class="tt-top-row">
+            <span class="tt-cat-label">${featured.categoryName}</span>
+            <span class="tt-issue-num">칼럼 ${numStr}</span>
+          </div>
           <h4 class="tt-clean-title">${featured.title}</h4>
+          <div class="tt-bottom-row">
+            <span class="tt-clinic-sign">검단중앙내과의원 · ${featured.author}</span>
+          </div>
         </div>
       </div>
     </div>
     <div class="featured-body">
       <div class="card-meta">
-        <span class="author">${featured.author} (${featured.authorRole})</span>
+        <img src="${featured.authorAvatar}" alt="${featured.author}" class="card-mini-avatar">
+        <span class="author">${featured.author}</span>
+        <span class="sep">·</span>
+        <span class="role-sub">${featured.authorRole}</span>
         <span class="sep">·</span>
         <span class="date">${dateFormatted}</span>
       </div>
       <h3 class="featured-title">${featured.title}</h3>
       <p class="featured-excerpt">${featured.snippet}</p>
       <div class="card-footer-action">
-        <span class="btn-read-more">칼럼 전문 보기 &rarr;</span>
+        <span class="btn-read-more">칼럼 전문 읽기 &rarr;</span>
       </div>
     </div>
   `;
@@ -152,6 +162,7 @@ function renderArticleGrid() {
 
   pool.forEach(article => {
     const dateFormatted = article.scheduledAt.slice(0, 10).replace(/-/g, '. ') + '.';
+    const numStr = String(article.id).padStart(2, '0');
 
     const card = document.createElement("div");
     card.className = "article-card";
@@ -161,7 +172,10 @@ function renderArticleGrid() {
       <div class="card-img-wrap">
         <div class="text-thumbnail-card ${article.themeClass}">
           <div class="card-inner title-only-card">
-            <span class="tt-cat-label">${article.categoryName}</span>
+            <div class="tt-top-row">
+              <span class="tt-cat-label">${article.categoryName}</span>
+              <span class="tt-issue-num">${numStr}</span>
+            </div>
             <h5 class="tt-clean-title">${article.title}</h5>
           </div>
         </div>
@@ -169,7 +183,10 @@ function renderArticleGrid() {
       <div class="card-body">
         <p class="card-snippet">${article.snippet}</p>
         <div class="card-footer">
-          <span class="card-author">${article.author}</span>
+          <div class="card-author-wrap">
+            <img src="${article.authorAvatar}" alt="${article.author}" class="card-mini-avatar">
+            <span class="card-author">${article.author}</span>
+          </div>
           <span class="card-time">${dateFormatted}</span>
         </div>
       </div>

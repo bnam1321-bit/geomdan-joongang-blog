@@ -134,8 +134,9 @@
   }
   </script>
 
-  <!-- Pretendard & FontAwesome -->
+  <!-- Pretendard, MaruBuri (Editorial Serif) & FontAwesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -145,14 +146,14 @@
   <aside class="top-announcement">
     <div class="site-container announcement-inner">
       <div class="announcement-text">
-        <span class="badge-accent">일요일 진료</span>
-        <strong>검단중앙내과의원은 일요일에도 오전 08:30 ~ 13:00 정상 진료합니다.</strong>
-        <span class="sub-text">(수·토·일 점심시간 없이 연속 진료)</span>
+        <span class="badge-accent">일요일 정상 진료</span>
+        <strong>매주 일요일 오전 08:30 ~ 13:00 진료합니다</strong>
+        <span class="sub-text">· 수·토·일 점심시간 없이 연속 진료</span>
       </div>
       <div class="announcement-links">
-        <a href="tel:0325647788" class="announcement-tel">032. 564. 7788</a>
+        <a href="tel:0325647788" class="announcement-tel">진료문의 032. 564. 7788</a>
         <a href="https://map.naver.com/p/search/%20%EA%B2%80%EB%8B%A8%EC%A4%91%EC%95%99%EB%82%B4%EA%B3%BC?c=15.00,0,0,0,dh&placePath=%2Finformation%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202609260654%26locale%3Dko%26svcName%3Dmap_pcv5%26searchText%3D%20%EA%B2%80%EB%8B%A8%EC%A4%91%EC%95%99%EB%82%B4%EA%B3%BC" target="_blank" class="announcement-map">
-          오시는 길
+          오시는 길 &rarr;
         </a>
       </div>
     </div>
@@ -165,15 +166,15 @@
         <img src="https://joongangmedicine.com/img/favicon.png" alt="검단중앙내과 심볼" class="brand-symbol">
         <div class="brand-text">
           <span class="brand-title">검단중앙내과의원</span>
-          <span class="brand-subtitle">공식 의학칼럼 · 건강정보</span>
+          <span class="brand-subtitle">전문의 진료실 건강 아카이브</span>
         </div>
       </a>
 
       <!-- Navigation Menu -->
       <nav class="main-nav">
         <a href="#featured" class="nav-link active" onclick="showArticleList()">건강칼럼</a>
-        <a href="#aboutHospital" class="nav-link" onclick="showArticleList()">진료 원칙</a>
-        <a href="#doctorsSection" class="nav-link" onclick="showArticleList()">의료진 소개</a>
+        <a href="#aboutHospital" class="nav-link" onclick="showArticleList()">진료 철학</a>
+        <a href="#doctorsSection" class="nav-link" onclick="showArticleList()">전문의 소개</a>
         <a href="#scheduleSection" class="nav-link" onclick="showArticleList()">진료시간</a>
         <a href="#locationSection" class="nav-link" onclick="showArticleList()">오시는 길</a>
       </nav>
@@ -194,41 +195,57 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Editorial Magazine Style with Real Doctors & Clinic Photo) -->
   <section class="hero-section" id="home">
     <div class="site-container hero-inner">
       <div class="hero-content">
-        <p class="hero-eyebrow">보건복지부 지정 국가건강검진 기관 · 인천 서구 불로동</p>
+        <div class="hero-meta-bar">
+          <span class="hero-meta-tag">보건복지부 지정 국가건강검진 기관</span>
+          <span class="hero-meta-divider"></span>
+          <span class="hero-meta-loc">인천 서구 불로동 · 현해타워2 2·3층</span>
+        </div>
         <h1 class="hero-heading">
-          꼭 필요한 진료와 꼼꼼한 검사,<br class="desktop-br">
-          진료실에서 다 못다 한 이야기를 전합니다.
+          검사는 꼼꼼하게,<br>
+          설명은 이해하기 쉽게,<br>
+          <span class="hero-serif-accent">진료실의 기록을 전합니다.</span>
         </h1>
         <p class="hero-desc">
-          소화기내시경 세부전문의 노인영 대표원장과 가정의학과 전문의 김인선 원장이<br class="desktop-br">
-          환자분들이 진료실에서 자주 묻는 질문과 질환별 관리 원칙을 직접 정리하여 연재합니다.
+          소화기내시경 세부전문의 <strong>노인영 대표원장</strong>과 가정의학과 전문의 <strong>김인선 원장</strong>이
+          환자분들이 진료실에서 가장 궁금해하시는 질환 정보와 검사 원칙을 직접 정리하여 연재합니다.
         </p>
         <div class="hero-cta-group">
           <a href="#featured" class="btn-hero-primary" onclick="showArticleList()">
-            건강칼럼 읽어보기
+            전문의 칼럼 읽어보기
           </a>
           <a href="#scheduleSection" class="btn-hero-secondary">
             일요일 및 진료시간 안내
           </a>
         </div>
       </div>
-      <div class="hero-card-preview">
-        <div class="hero-stat-card">
-          <div class="stat-item">
-            <span class="stat-label">내과 · 가정의학과</span>
-            <span class="stat-num">전문의 2인 진료</span>
+
+      <!-- Editorial Visual Showcase -->
+      <div class="hero-visual-showcase">
+        <div class="showcase-main-frame">
+          <img src="https://joongangmedicine.com/img/main/clinic/clinic_slide06.jpg" alt="검단중앙내과의원 내부 전경" class="showcase-clinic-img">
+          <div class="showcase-caption-bar">
+            <span>검단중앙내과의원 진료·검진 공간</span>
+            <span>032. 564. 7788</span>
           </div>
-          <div class="stat-item">
-            <span class="stat-label">위·대장내시경 및 용종절제</span>
-            <span class="stat-num">세부전문의 직접 시행</span>
+        </div>
+        <div class="showcase-doctors-dock">
+          <div class="dock-doc-item" onclick="document.getElementById('doctorsSection').scrollIntoView({behavior:'smooth'})">
+            <img src="https://joongangmedicine.com/img/main/doctor/thum_doc_01.png" alt="노인영 대표원장" class="dock-avatar">
+            <div class="dock-info">
+              <strong>노인영 대표원장</strong>
+              <span>내과 전문의 · 소화기내시경 세부전문의</span>
+            </div>
           </div>
-          <div class="stat-item">
-            <span class="stat-label">평일 내원이 어려운 분들을 위한</span>
-            <span class="stat-num">일요일 오전 진료</span>
+          <div class="dock-doc-item" onclick="document.getElementById('doctorsSection').scrollIntoView({behavior:'smooth'})">
+            <img src="https://joongangmedicine.com/img/main/doctor/thum_doc_02.png" alt="김인선 원장" class="dock-avatar">
+            <div class="dock-info">
+              <strong>김인선 원장</strong>
+              <span>가정의학과 전문의 · 만성질환·수액·검진</span>
+            </div>
           </div>
         </div>
       </div>
